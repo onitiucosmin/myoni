@@ -14,6 +14,11 @@ const featuresData = [
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
   {
+    title: 'Typescript',
+    text: 'While basically a layer over Javascript, it is the language i use in all my newer projects and at my current workplace',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+  },
+  {
     title: 'HTML',
     text: 'While not a hard thing to learn, it has it\'s subtleties, which can improve a site',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
@@ -57,11 +62,6 @@ const featuresData = [
     title: 'My/NoSQL',
     text: 'There are lots of way to create databases, these 2 are the ones i\'ve used, being relational and non-relational',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-  },
-  {
-    title: 'Arduino',
-    text: 'Used for my bachelor\'s thesis in programming a monitor drone with an automated drop-pick electromagnet',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg',
   },
 ];
 

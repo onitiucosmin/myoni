@@ -15,6 +15,11 @@ const technologies = [
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
   },
   {
+    title: 'Angular + RxJs',
+    text: 'Technologies used in all my current projects',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+  },
+  {
     title: 'Git',
     text: 'Your all-in-one package for version control',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
@@ -45,19 +50,9 @@ const technologies = [
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
   },
   {
-    title: 'jQuery',
-    text: 'Made life a lot easier in my simpler projects',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg',
-  },
-  {
     title: 'MongoDb',
     text: 'Extremely useful in my Node.Js developed apps',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg',
-  },
-  {
-    title: 'Qt',
-    text: 'My first GUI development tool, which I used during my internship at Siemens',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg',
   },
 ];
 

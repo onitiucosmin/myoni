@@ -3,9 +3,19 @@ import FeatureWork from '../../components/featureWork/FeatureWork';
 
 const workplaces = [
   {
+    title: 'Frontend Developer at ValeoIt',
+    period: 'Period: Aug 2022 - Present',
+    list: ['Develop internal applications and web application in Angular and Typescript'],
+  },
+  {
     title: 'Mthree Collaboration with Morgan Stanley',
-    period: 'Period: June 2021 - Present',
-    list: ['Cannot disclose present activity'],
+    period: 'Period: June 2021 - Aug 2022',
+    list: ['Execute full software development life cycle (SDLC), based on the requirements of the shareholders. (The cycles start point is the trader, who is included in all phases, including testing)',
+      'Plan out the timeline, the risk assessment and create a regular feedback loop with the clients',
+      'Document and maintain software functionality, by examining the codebase of the application, re-factoring the code and adding new functionality through modern APIs',
+      'Reduce the load of the application by improving algorithms, and moving our individual services on dedicated hosts provided by the company',
+      'Mentored peer engineers on development and best practices (Regular knowledge share sessions within the team)',
+      'Technologies: C++, Python, Scala, Perl, Git, Jenkins, Bash, Unix'],
   },
   {
     title: 'OSF Academy Internship (Node.js Project)',

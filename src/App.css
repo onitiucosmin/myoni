@@ -16,6 +16,38 @@ a {
   text-decoration: none;
 }
 
+.back-to-top {
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  font-size: 75px;
+
+  background: var(--gradient-text);
+
+  color: white;
+
+  cursor: pointer;
+
+  border-radius: 50px;
+
+  border: none;
+
+  box-shadow: 0 5px 10px #ccc;
+
+}
+
+
+
+.back-to-top:hover {
+
+  background: var(--color-bg);
+
+}
+
 .gradient__bg {
   background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 

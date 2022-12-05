@@ -1,14 +1,28 @@
 // eslint-disable-next-line
-import { goldenLaurel, movieNext, wagtailRocket, osfAcademy, cppAlumni, imageRec, kryptoImage, expenseVoice, teamsImage, flutterImage, nftImage, ecommerceImage } from './imports';
-import { imageReco, mthreeAlumni, movieApp, osfProj, godMenu, wagtail, kryptonet, expense, teams, flutter, nftmarket, ecommerce } from './jsximports';
+import { goldenLaurel, godMenus, movieNext, wagtailRocket, osfAcademy, cppAlumni, imageRec, kryptoImage, expenseVoice, teamsImage, flutterImage, nftImage, ecommerceImage, tiktikimage } from './imports';
+import { imageReco, godMenu2, mthreeAlumni, movieApp, osfProj, godMenu, wagtail, kryptonet, expense, teams, flutter, nftmarket, ecommerce, tiktik } from './jsximports';
 
 const devProjects = [
+  {
+    name: 'The God\'s Menu V2',
+    description: 'The upgrade to my diet network',
+    tags: ['Angular', 'Typescript', 'Firebase'],
+    htmlname: godMenu2,
+    image: godMenus,
+  },
   {
     name: 'The God\'s Menu',
     description: 'My own personal diet planning/social web application',
     tags: ['React', 'Mongo', 'REST', 'Redux', 'Node'],
     htmlname: godMenu,
     image: goldenLaurel,
+  },
+  {
+    name: 'TikTik',
+    description: 'A clone of tiktok',
+    tags: ['NextJS', 'Sanity', 'Tailwind', 'Zustand'],
+    htmlname: tiktik,
+    image: tiktikimage,
   },
   {
     name: 'KryptoNet',

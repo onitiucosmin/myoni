@@ -15,8 +15,8 @@ const Header = () => (
       </div>
 
       <div className="gpt3__header-content__people">
-        <img src={goldenLaurel} href="https://thegodmenu.com" target="#" />
-        <p><a href="https://thegodmenu.com" target="#">Join my Nutrition Planning Network</a></p>
+        <img src={goldenLaurel} href="https://godmenu-db556.web.app/" target="#" />
+        <p><a href="https://godmenu-db556.web.app/" target="#">Join my Nutrition Planning Network</a></p>
       </div>
     </div>
 
