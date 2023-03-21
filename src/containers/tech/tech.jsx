@@ -5,9 +5,9 @@ import FeatureTech from '../../components/featureTech/FeatureTech';
 
 const technologies = [
   {
-    title: 'Visual Studio/ Code',
-    text: 'Used for almost all projects, praise the extension lords',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+    title: 'Figma',
+    text: 'Used to develop all of my design, combined with its vast plugins',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
   },
   {
     title: 'React + Redux',

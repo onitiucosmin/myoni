@@ -3,9 +3,34 @@ import FeatureWork from '../../components/featureWork/FeatureWork';
 
 const workplaces = [
   {
+    title: 'Business Owner at FluxSolve',
+    period: 'Period: March 2023 - Present',
+    list: ['Develop and maintain custom websites and web applications for clients, utilizing a variety of programming languages, frameworks, and platforms including HTML, CSS, Typescript, React, Angular, Web Builders',
+      'Collaborate with clients to understand their unique needs and translate those requirements into functional web solutions that meet their goals.',
+      'Implement responsive design and user experience best practices to ensure that websites and web applications are optimized for all devices and accessible to a wide range of users.',
+      'Maintain clear communication with clients throughout the project lifecycle, ensuring that their feedback is heard and incorporated into the development process.',
+      'Troubleshoot and resolve issues related to websites and web applications, working quickly to resolve any technical challenges and ensure that clients are satisfied with the end product.',
+      'Manage project timelines and budgets to ensure that work is delivered on time and within the agreed-upon scope',
+    ],
+  },
+  {
+    title: 'Fullstack Developer at ValeoIt',
+    period: 'Period: Jan 2023 - Present',
+    list: ['Developed full-stack web applications using Angular 12-14 / React and .NET Core / EF Core for clients.',
+      'Designed and implemented a responsive front-end with Figma / Adobe XD then implementing with Angular Material / React MUI or Tailwind components and custom CSS styling',
+      'Configured and secured the back-end with JWT authentication, role-based authorization, and HTTPS.',
+      'Implemented data access layer using Entity Framework Core and SQL Server, and utilized LINQ for querying and filtering data',
+      'Leveraged Azure DevOps for CI/CD pipeline, code version control, and automated testing'],
+  },
+  {
     title: 'Frontend Developer at ValeoIt',
-    period: 'Period: Aug 2022 - Present',
-    list: ['Develop internal applications and web application in Angular and Typescript'],
+    period: 'Period: Aug 2022 - Jan 2023',
+    list: ['Collaborated with cross-functional teams to develop and maintain web applications using Angular and React.',
+      'Designed and developed front-end interfaces using Angular, NgRx, and RxJs, HTML, CSS, and TypeScript',
+      'Worked closely with back-end developers to integrate front-end components with RESTful APIs and microservices',
+      'Utilized Git for version control and worked with Jenkins for CI/CD pipeline',
+      'Worked in Agile teams, participated in daily stand-ups, sprint planning, and retrospective meetings',
+      'Contributed to code reviews and mentored junior developers.'],
   },
   {
     title: 'Mthree Collaboration with Morgan Stanley',

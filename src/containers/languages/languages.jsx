@@ -35,7 +35,7 @@ const featuresData = [
   },
   {
     title: 'Python',
-    text: 'Used for scripting, developing web apps with Wagtail, Django and Flask and a bit of machine learning and fun things like that',
+    text: 'Used for scripting, developing web apps with Wagtail, Django and Flask and a machine learning, combined with the Pyspark, Pandas, Pytorch libraries',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
   },
   {
@@ -44,24 +44,19 @@ const featuresData = [
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
   },
   {
-    title: 'Java',
-    text: 'The first language i started to learn on my own, used it for Rest Assured Automation in one of my courses',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+    title: 'Scala',
+    text: 'Used in my last workplaces, for data preprocessing combined with the Spark library',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg',
   },
   {
-    title: 'C#',
-    text: 'While not having much experience on this one, i used it for 2 projects, one school project and a tournament planning app, with a windows form gui, email sending and fun stuff',
+    title: 'C# / .NET Core',
+    text: 'Main technology to develop the backend in my latest workplace with Entity framework Core',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
   },
   {
     title: 'Solidity',
     text: 'My recent passion, used to develop my first smart contracts and tokens, and will be heavily used in the upcoming period',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-plain.svg',
-  },
-  {
-    title: 'My/NoSQL',
-    text: 'There are lots of way to create databases, these 2 are the ones i\'ve used, being relational and non-relational',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
   },
 ];
 
