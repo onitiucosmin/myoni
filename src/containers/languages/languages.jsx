@@ -35,7 +35,7 @@ const featuresData = [
   },
   {
     title: 'Python',
-    text: 'Used for scripting, developing web apps with Wagtail, Django and Flask and a machine learning, combined with the Pyspark, Pandas, Pytorch libraries',
+    text: 'Used for scripting, developing web apps with Wagtail, Django and Flask and machine learning',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
   },
   {

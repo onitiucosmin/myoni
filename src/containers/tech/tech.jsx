@@ -20,6 +20,11 @@ const technologies = [
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
   },
   {
+    title: 'Machine Learning Libraries',
+    text: 'Pandas, NumPy, Matplotlib, Scikit-Learn, Tensorflow, Keras, PyTorch',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg',
+  },
+  {
     title: 'Git',
     text: 'Your all-in-one package for version control',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
