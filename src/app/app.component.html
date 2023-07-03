@@ -1,0 +1,67 @@
+<mat-toolbar color="primary" class="navbar">
+  <span class="navbar-title">Cosmin's Portfolio</span>
+
+  <!-- Menu button for small screens -->
+  <button mat-icon-button class="menu-button" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Links for big screens -->
+  <div class="navbar-links">
+    <a mat-button href="#header">Home</a>
+    <a mat-button href="#portfolio">Portfolio</a>
+    <a mat-button href="#programmingLanguages">My Programming Languages</a>
+    <a mat-button href="#workExperiences">Work Experiences</a>
+    <a mat-button href="#contactMe">Contact me</a>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over">
+    <!-- Content for the collapsible side nav -->
+    <a mat-list-item href="#header">Home</a>
+    <a mat-list-item href="#portfolio">Portfolio</a>
+    <a mat-list-item href="#programmingLanguages">My Programming Languages</a>
+    <a mat-list-item href="#workExperiences">Work Experiences</a>
+    <a mat-list-item href="#contactMe">Contact me</a>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Main content of your application -->
+    <div class="gradient__bg">
+      <div class="section">
+        <app-header> </app-header>
+      </div>
+      <div class="section">
+        <app-programming-languages> </app-programming-languages>
+      </div>
+      <div class="section">
+        <app-portfolio> </app-portfolio>
+      </div>
+      <div class="section">
+        <app-work-experiences> </app-work-experiences>
+      </div>
+      <div class="section">
+        <app-strong-points> </app-strong-points>
+      </div>
+    </div>
+    <div class="footer" id="contactMe">
+      <h4 class="footer_header">Stay in touch!</h4>
+      <a class="btn btn-outline-light btn-floating m-1 " href="https://www.facebook.com/onitiu.cosmin/" role="button" target="_blank" rel="noreferrer">
+        <fa-icon [icon]="faFacebook"></fa-icon>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 " href="https://www.instagram.com/onitiucosmin/?hl=ro" role="button" target="_blank" rel="noreferrer">
+        <fa-icon [icon]="faInstagram"></fa-icon>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 " href="https://www.linkedin.com/in/cosmin-onitiu-047ba11b2/" role="button" target="_blank" rel="noreferrer">
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 " href="https://github.com/onitiucosmin" role="button" target="_blank" rel="noreferrer">
+        <fa-icon [icon]="faGithub"></fa-icon>
+      </a>
+    </div>
+    <button (click)="scrollToTop()" class="back-to-top" type="button">
+      &#8593;
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,33 @@
+<div>
+  <ng-container *ngFor="let e of data.element">
+    <h1 *ngIf="e[0] === 'h1-ownlink'" style="color: rgb(55, 51, 51); margin-top: 2.4rem; margin-bottom: 2.4rem" class="text-center">
+      <a [href]="e[1][0]" rel="noreferrer" target="_blank" style="text-decoration: none; color: rgb(21, 44, 61)">
+        {{e[1][1]}}
+      </a>
+    </h1>
+    <h1 *ngIf="e[0] === 'h1-nolink'" style="color: rgb(55, 51, 51); margin-top: 4rem; margin-bottom: 4rem" class="text-center">
+      {{e[1][0]}}
+    </h1>
+    <h4 *ngIf="e[0] === 'h4-nolink'" style="color: rgb(55, 51, 51); margin-top: 1rem; margin-bottom: 1rem; font-weight: bold;" class="text-center">
+      {{e[1][0]}}
+    </h4>
+    <div *ngIf="e[0] === 'p'">
+      <ng-container *ngFor="let p of e[1]">
+        <p>{{p}}</p>
+      </ng-container>
+    </div>
+    <div *ngIf="e[0] === 'img'">
+      <img style="width: 100%; margin-top: 1rem;" [src]="e[1]" />
+    </div>
+    <div *ngIf="e[0] === 'small-img'">
+      <img style="width: 24%; margin-left: 38%; margin-top: 1rem;" [src]="e[1]" />
+    </div>
+    <div *ngIf="e[0] === 'ul'">
+      <ul>
+        <ng-container *ngFor="let l of e[1]">
+          <li>{{l}}</li>
+        </ng-container>
+      </ul>
+    </div>
+  </ng-container>
+</div>

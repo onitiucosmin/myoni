@@ -1,0 +1,25 @@
+<div id="workExperiences" class="workExperiences">
+  <div class="workExperiences-heading">
+    <h1 class="gradient__text">My studies and work experiences</h1>
+  </div>
+
+  <ng-container *ngFor="let item of workplaces; let i = index">
+    <div class="row body-text" [ngClass]="{'last': i === lastItemIndex}">
+      <div class="col-md-4 col-12">
+        <div class="work-title">
+          <div class="top-line"></div>
+          <h1>{{item.title}}</h1>
+          <span class="work-period">{{item.period}}</span>
+        </div>
+      </div>
+      <div class="col-md-8 col-12">
+        <ul class="work-list">
+          <ng-container *ngFor="let bulletPoint of item.list">
+            <li>{{bulletPoint}}</li>
+          </ng-container>
+        </ul>
+      </div>
+    </div>
+  </ng-container>
+
+</div>

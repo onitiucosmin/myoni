@@ -1,0 +1,49 @@
+.workExperiences-heading {
+  margin-bottom: 2rem;
+  text-align: left;
+  margin-right: 5rem;
+  h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+  }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+}
+
+.work-title {
+
+  h1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #fff;
+    width: 10rem;
+  }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.work-list {
+  padding-top: 1rem;
+  li {
+    padding-bottom: 0.3rem;
+    line-height: 1.4rem;
+  }
+}
+
+.row{
+  border-bottom: 1px rgba(182, 182, 182, 0.497) solid;
+}
+.row.last {
+  border-bottom: none;
+}

@@ -1,0 +1,114 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 0rem 4rem 0rem 4rem;
+  border-radius: 1rem;
+  background: var(--gradient-bar);
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+    h3 {
+      font-family: var(--font-family);
+      font-size: 24px;
+      line-height: 45px;
+      font-weight: 800;
+    }
+  }
+
+  .cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    button {
+      background: #000;
+      color: #fff;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      min-width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cta {
+      flex-direction: column;
+      .cta-btn {
+        margin: 2rem 0 0;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .cta {
+    flex-direction: column;
+    margin: 4rem 2rem;
+    .cta-content h3 {
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .cta-btn button {
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+}
+.portfolio-container{
+  .project-card {
+    background-color: var(--color-footer);
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    height: 22rem;
+    box-shadow: 0px 0px 15px rgba(50, 163, 186, 0.662);
+    .project-image{
+      height: 10rem;
+      img{
+        height: 10rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1.5rem 1.5rem 0 0;
+      }
+    }
+    .project-content {
+      padding: 0.75rem;
+      height: 11rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .project-tags{
+        color: white;
+        span {
+          margin-right: 0.3rem;
+          font-size: 0.75rem;
+          font-weight: 500;
+        }
+      }
+      .project-title h1{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+      }
+      .project-description {
+        color: var(--color-text);
+      }
+      .open-project-dialog{
+        color: white;
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+      }
+    }
+
+  }
+}

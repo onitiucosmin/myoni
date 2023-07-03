@@ -1,0 +1,42 @@
+<div id="portfolio">
+  <div class="cta">
+    <div class="cta-content">
+      <h3>My portfolio of projects</h3>
+    </div>
+    <div class="cta-btn">
+      <button (click)="downloadCV()">Download my CV</button>
+    </div>
+  </div>
+  <div class="portfolio-container">
+    <div class="row">
+      <ng-container *ngFor="let p of devProjects">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <div class="project-card mat-elevation-z8">
+            <div class="project-image">
+              <img [src]="p.image"/>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>Tags: </span>
+                <ng-container *ngFor="let t of p.tags; let i = index">
+                  <span *ngIf="i < p.tags.length - 1">{{t}},</span>
+                  <span *ngIf="i === p.tags.length - 1">{{t}}</span>
+                </ng-container>
+              </div>
+              <div class="project-title">
+                <h1>{{p.name}}</h1>
+              </div>
+              <div class="project-description">
+                <span>{{p.description}}</span>
+              </div>
+              <div class="open-project-dialog" (click)="openDialog(p.htmlname)">
+                <span>Read full article</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>>

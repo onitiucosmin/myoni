@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.739);
+  .navbar-title {
+    font-weight: normal;
+  }
+  .navbar-links {
+    font-weight: 300!important;
+    font-size: 1rem;
+  }
+  .menu-button {
+    display: none; /* Hide the menu button by default on big screens */
+  }
+
+  @media (max-width: 600px) {
+    /* Styles for small screens */
+    .navbar-links {
+      display: none; /* Hide the links on small screens */
+    }
+
+    .menu-button {
+      display: block; /* Show the menu button on small screens */
+    }
+  }
+}
+
+.footer {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background: var(--color-footer);
+   padding-top: 0.75rem!important;
+   padding-bottom: 2rem;
+   .footer_header{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+   }
+}

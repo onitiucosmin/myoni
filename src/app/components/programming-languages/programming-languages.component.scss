@@ -1,0 +1,71 @@
+.programmingLanguages-heading {
+  margin-bottom: 2rem;
+  text-align: left;
+  margin-right: 5rem;
+  h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+
+}
+.lang-container {
+  align-items: center;
+  width: 100%;
+
+  border-bottom: #c4c4c47f 0.05rem solid;
+  .lang-title{
+
+    margin-right: 2rem;
+
+    .title-and-image{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      h1 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.04em;
+        color: #fff;
+        width: 10rem;
+      }
+      .language_icon {
+        width: 40px;
+        margin-left: 1.6rem;
+      }
+      @media screen and (max-width: 550px) {
+        h1 {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .lang-text {
+    width: 100%;
+    padding-top: 0.5rem;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    @media screen and (max-width: 550px) {
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+.lang-container.last {
+  border-bottom: none;
+}

@@ -1,0 +1,50 @@
+<div id="programmingLanguages" class="programmingLanguages">
+  <div class="programmingLanguages-heading">
+    <h1 class="gradient__text">Let me tell you about my expertise and where it came from</h1>
+  </div>
+    <ng-container *ngFor="let item of pLangs; let i = index">
+        <div class="lang-container" [ngClass]="{'last': i === lastItemIndex}">
+          <div class="row">
+            <div class="col-xl-2 col-lg-3">
+              <div class="lang-title">
+                <div class="top-line"></div>
+                <div class="title-and-image">
+                  <h1>{{item.title}}</h1>
+                  <img [src]="item.src" class="language_icon" style="color: white" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-9">
+              <div class="lang-text body-text">
+                <p>{{item.text}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </ng-container>
+  <hr style="margin-left: 2rem;"/>
+  <div class="programmingLanguages-heading" style="display: flex; justify-content: right;">
+    <h1 class="gradient__text">What technologies am i familiar with?</h1>
+  </div>
+    <ng-container *ngFor="let item of technologies; let i = index">
+        <div class="lang-container" [ngClass]="{'last': i === lastTechIndex}">
+          <div class="row">
+
+            <div class="col-xl-10 col-lg-9">
+              <div class="lang-text body-text">
+                <p>{{item.text}}</p>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3">
+              <div class="lang-title">
+                <div class="top-line"></div>
+                <div class="title-and-image">
+                  <h1>{{item.title}}</h1>
+                  <img [src]="item.src" class="language_icon" style="color: white" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </ng-container>
+</div>
