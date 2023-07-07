@@ -24,6 +24,7 @@ export class WorkExperiencesComponent implements OnInit {
       period: 'Period: Jan 2023 - Present',
       list: ['Developed full-stack web applications using Angular 12-14 / React and .NET Core / EF Core for clients.',
         'Designed and implemented a responsive front-end with Figma / Adobe XD then implementing with Angular Material / React MUI or Tailwind components and custom CSS styling',
+        'Design and implement AI models using Spark, SKLearn and integrate them into production pipelines to enhance the functionality of applications.',
         'Configured and secured the back-end with JWT authentication, role-based authorization, and HTTPS.',
         'Implemented data access layer using Entity Framework Core and SQL Server, and utilized LINQ for querying and filtering data',
         'Leveraged Azure DevOps for CI/CD pipeline, code version control, and automated testing'],

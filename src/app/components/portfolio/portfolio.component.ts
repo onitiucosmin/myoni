@@ -15,6 +15,13 @@ export class PortfolioComponent implements OnInit {
 
   public devProjects = [
     {
+      name: 'Tickets Chatbot ML Model',
+      description: 'Ticket Classification for Support Desk using Machine Learning',
+      tags: ['Python', 'SKLearn', 'Pyspark'],
+      htmlname: 'pyspark-ai',
+      image: 'assets/pyspark-ai-1.png',
+    },
+    {
       name: 'The God\'s Menu V2',
       description: 'The upgrade to my diet network',
       tags: ['Angular', 'Typescript', 'Firebase'],
@@ -114,6 +121,26 @@ export class PortfolioComponent implements OnInit {
     },
   ];
   public devHtmls: { [key: string]: any } = {
+    "pyspark-ai": [
+      ["h1-nolink" , ["PROJECT OVERVIEW"]],
+      ["p", [
+        "The aim of this project is to develop a machine learning model for classifying support desk tickets. The project timeline was limited to two weeks, with 10 days dedicated to data exploration and cleaning, and the remaining 4 days focused on model development and integration.",
+        "Note: The timeline was a time crunch of 2 weeks, with 10 days dedicated to exploration and cleaning, and the remaining 4 days focused on model development and integration. Despite the time constraints, the project successfully delivered a robust machine learning model with a satisfactory accuracy rate.",
+        "Project steps:",
+      ]],
+      ["ul", [
+        "Data Collection: Gathered a dataset of 100,000 old support desk tickets for training and evaluation purposes.",
+        "Data Ingestion: Utilized PySpark to ingest the ticket data and stored it in Parquet format for efficient processing.",
+        "Data Exploration: Conducted an initial exploration of the ticket data to gain insights into its structure and characteristics. Analyzed various attributes, such as ticket length, unique words, emoticons, and potential misspellings. Identified potential challenges and opportunities for data cleaning and preprocessing.",
+        "Data Cleaning: Implemented comprehensive data cleaning techniques to address the identified challenges. Removed emoticons, special characters, and irrelevant information from the ticket text. Handled misspellings through techniques like spell correction or removal of tickets with excessive misspellings. Addressed ticket length variations by considering both long and short tickets during model training.",
+        "Dataset Creation: Generated multiple sets of data with different preprocessing techniques for model exploration. These sets included variations in text normalization, feature engineering, and other relevant transformations.",
+        "Model Exploration: Explored various machine learning models using PySpark, scikit-learn, and XGBoost. Conducted extensive testing and evaluation of different models' performance on the created datasets. Based on the evaluation results, selected the Support Vector Machine (SVM) model from scikit-learn for further development.",
+        "Model Fine-Tuning: Performed hyperparameter grid searches to optimize the SVM model's performance. Adjusted parameters such as kernel type, regularization, and gamma values to enhance accuracy. Continuously tested and evaluated the model to ensure consistent improvement.",
+        "Model Evaluation: Conducted rigorous testing to measure the final accuracy of the SVM model. Achieved a 90% accuracy rate for classifying major ticket groups, indicating the model's effectiveness.",
+        "Model Integration: Integrated the trained SVM model into a web service for seamless deployment and usage. Created an API or other suitable interfaces to allow users to classify new support desk tickets."
+      ]],
+      ["img", "assets/pyspark-ai-2.png"]
+    ],
     "godmenu2": [
       ["h1-ownlink", ["https://godmenu-db556.web.app/" , "INTRODUCTION (Link)"]],
       ["p", [
