@@ -15,6 +15,13 @@ export class PortfolioComponent implements OnInit {
 
   public devProjects = [
     {
+      name: 'Europe Cars Scrapper',
+      description: 'All European car postings centralized in a web service',
+      tags: ['Python', 'Angular', 'Redis'],
+      htmlname: 'car-scrapper',
+      image: 'assets/car-scrapper-1.png',
+    },
+    {
       name: 'Tickets Chatbot ML Model',
       description: 'Ticket Classification for Support Desk using Machine Learning',
       tags: ['Python', 'SKLearn', 'Pyspark'],
@@ -121,6 +128,21 @@ export class PortfolioComponent implements OnInit {
     },
   ];
   public devHtmls: { [key: string]: any } = {
+    "car-scrapper": [
+      ["h1-nolink" , ["PROJECT OVERVIEW"]],
+      ["p", [
+        "*Disclaimer : The project is not hosted anywhere due to it's scrapping rate of 50 requests per minute crashing two of the bigger car sites in Romania",
+        "The goal of the project was to centralize the european car market in a single service similar to AutoTempest in the USA. The backend service was composed of multile microservices which include: API, Caching, Scrapping, AI-pricing, Car-Vertical Integration"
+      ]],
+      ["h4-nolink", ["Designing the arhitecture"]],
+      ["img", "assets/car-scrapper-2.png"],
+      ["h4-nolink", ["More Details"]],
+      ["p", [
+        "The project was a fun challenge, especially when it came to optimizing the scrapping, taking advantage of redis for caching, web workers to optimize requests with request sessions and virtual pagination for the frontend side",
+        "It was quite sad when it came down to closing the project down due to car posting services not being what i've expected as far as we consider scale and redundancy (Autovit was down for 18 hours)"
+      ]],
+      ["img", "assets/car-scrapper-3.png"]
+    ],
     "pyspark-ai": [
       ["h1-nolink" , ["PROJECT OVERVIEW"]],
       ["p", [
