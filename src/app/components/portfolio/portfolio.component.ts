@@ -15,6 +15,20 @@ export class PortfolioComponent implements OnInit {
 
   public devProjects = [
     {
+      name: 'WORK: Internal File Transfer',
+      description: 'File Transfer Application, wrapper over S3 and SFTPGO (sftp daemon)',
+      tags: ['.Net', 'Angular', 'SFTPGO', 'AWS-Services'],
+      htmlname: 'file-transfer',
+      image: 'assets/PROJECT-FileTransfer/file-transfer.png',
+    },
+    {
+      name: 'WORK: Admin Panel and Windows Client',
+      description: 'Panel for configuring CAD applications and organizing business logic',
+      tags: ['.Net', 'Angular', 'WPF'],
+      htmlname: 'admin-panel',
+      image: 'assets/admin-panel.png',
+    },
+    {
       name: 'Europe Cars Scrapper',
       description: 'All European car postings centralized in a web service',
       tags: ['Python', 'Angular', 'Redis'],
@@ -128,6 +142,62 @@ export class PortfolioComponent implements OnInit {
     },
   ];
   public devHtmls: { [key: string]: any } = {
+    "file-transfer": [
+      ["h1-nolink" , ["PROJECT OVERVIEW"]],
+      ["p", [
+        "*Disclaimer : Project details related to business logic, full arhitecture and the client will not be disclosed",
+        "The goal of the project was to create an a file transfer application purely web based which using a basic Angular frontend and a middleware which acts a wrapper, allows users to securely use S3 and SFTPGO to transfer files internally"
+      ]],
+      ["h4-nolink", ["The arhitecture"]],
+      ["p", [
+        "While the arhitecture details will not be disclosed the basic outline of the arhitecture had the scope to use the S3 and it's replications rules + SFTPGO as a daemon to allow users to transfer files quickly between one another, a quick rundown of technologies used are:"
+      ]],
+      ["ul", [
+        "Angular for frontend development",
+        ".Net with EF Core ORM for middleware development",
+        "Keycloak as an identity provider",
+        "SFTPGO as a sftp daemon over S3 + S3 replication rules between multiple regions",
+        "Nginx as a gateway/reverse-proxy/load-balancer",
+        "RabbitMQ as a message que between microservices",
+        "MariaDB Galera for storing",
+        "Services like Loki, Grafana, Prometheus strictly for monitoring",
+        "Terraform, Docker, Kubernetes for ops"
+      ]],
+      ["h4-nolink", ["My Role in the project"]],
+      ["p", [
+        "My initial role in the project was assigned as lead frontend dev and if-needed middleware developer, but as the project progressed i was able to also contribute to the arhitecture work / ops. Here is a quick rundown of my bigger contributions:"
+      ]],
+      ["ul", [
+        "First contribution was using my personally developed components and software patterns to bring the frontend to a production-ready state in record time which allowed for more middleware development which was critical",
+        "Implementing critical file transfer mechanisms (Retries, Chunking, Progress Reports, Replication Statuses, Role Concepts, Logs)",
+        "Contributions to the nginx gateway which had a lua rewrite as a wrapper over the already present sftpgo api (Useful for the chunking)",
+        "Development on the microservices (Identity microservice as a wrapper over keycloak and sftpgo authentication, Transfer microservice which dealt with organizing the transfers as dictated by business logic, and Audit consumer microservice)",
+      ]]
+    ],
+    "admin-panel": [
+      ["h1-nolink" , ["PROJECT OVERVIEW"]],
+      ["p", [
+        "*Disclaimer : Project details related to business logic and the client will not be disclosed",
+        "The goal of the project was to create an admin panel where the managers can manage all the business logic and an native windows executable which acts as the client for their users"
+      ]],
+      ["h4-nolink", ["The arhitecture"]],
+      ["p", [
+        "The arhitecture was decided before i joined the project, it was composed of an Angular frontend admin panel, a WPF client executable and a .Net Backend Microservice arhitecture which uses EF Core as an ORM and CQRS patterns, and for the deployment/ops Docker, Kubernetes",
+      ]],
+      ["h4-nolink", ["My Role in the project"]],
+      ["p", [
+        "This was my first advanced work project and i joined strictly as a frontend developer which later developed in working fullstack on all parts of the application. This is a list of my contributions on a high level:"
+      ]],
+      ["ul", [
+        "Starting from the design, and using software patterns (factories for the numerous tables and forms, singleton stores, rxjs patterns like services, interceptors, guards) i implemented the admin application with mock data in a really short timeframe, allowing for more improvements and client satisfaction",
+        "After participating in numerous client meetings, i was able to make informed software and database modelling decisions (Entities modelling, Application flow) which allowed for a smooth development process",
+        "My first .Net contribution was in this project where good frontend development allowed me to participate in backend work, which was composed of a basic implementations but thanks to that client requests were implemented quickly due to the low backend-frontend latency",
+        "I was the sole developer for the WPF client application, which went smoothly due to the MVVM pattern, allowing separation of concerns",
+        "My most notable components are reusable highly general purpose components which we still use in other applications today, two examples are a a structured tree list and a highly customizable table"
+      ]],
+      ["img", "assets/admin-panel-table.png"],
+      ["img", "assets/admin-panel-filelist.png"],
+    ],
     "car-scrapper": [
       ["h1-nolink" , ["PROJECT OVERVIEW"]],
       ["p", [
